@@ -1,125 +1,151 @@
 /* Main Container */
 .login-container {
-    display: flex;
-    height: 100vh;
-    width: 100%;
-  }
-  html, body {
-    /* overflow: hidden; */
-    height: 100vh;
-    width: 100vw;
-    margin: 0;
-    padding: 0;
-}    
+  display: flex;
+  height: 100vh;
+  width: 100%;
+}
+
+html,
+body {
+  height: 100vh;
+  width: 100vw;
+  margin: 0;
+  padding: 0;
+}
+
 .login-container {
   position: fixed;
   top: 0;
   left: 0;
 }
-  /* Left Side: Background Image */
+
+/* Left Side: Background Image */
+.image-section {
+  width: 80%;
+  background-image: url("/images/pic.png");
+  background-size: cover;
+  background-position: center;
+}
+
+/* Hide the image on smaller screens */
+@media (max-width: 768px) {
   .image-section {
-    width: 80%;
-    background-image: url('/images/pic.png');
-    background-size: cover;
-    background-position: center;
+    display: none;
   }
-  .logo{
-    
-    background-position: center;
-    background-size: cover;
-    background-image: url('https://adfs2.fontys.nl/adfs/portal/logo/logo.png?id=6FEF4AFF81051E59C87672BA544F79E108E68E557B781DCCF1B11D025768D6D4');
-    width: 200px;
-    height: 100px;
-  }
-  
-  /* Right Side: Login Form */
-  .login-box {
-    flex: 1;
-    display: flex;
+}
+
+.logo {
+  background-position: center;
+  background-size: cover;
+  background-image: url("https://adfs2.fontys.nl/adfs/portal/logo/logo.png?id=6FEF4AFF81051E59C87672BA544F79E108E68E557B781DCCF1B11D025768D6D4");
+  width: 200px;
+  height: 100px;
+  margin-right: 200px;
+  margin-bottom: 12px;
+}
+
+/* Right Side: Login Form */
+.login-box {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  background: white;
+  padding: 40px;
+  box-shadow: -5px 0px 10px rgba(0, 0, 0, 0.2);
+  width: 480px;
+}
+
+h2 {
+  font-size: 16px;
+  margin: 4px 120px 4px 0;
+  width: 280px;
+  color: #333;
+}
+
+.input-field {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.sign-in-button {
+  width: 30%;
+  background-color: #e6007e;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 2px;
+  cursor: pointer;
+  font-size: 14px;
+  margin-top: 10px; margin-bottom: 60px;
+}
+
+.sign-in-button:hover {
+  background-color: #b80064;
+}
+
+.error-message {
+  color: red;
+  margin-top: 10px;
+}
+
+.footer-text {
+  margin-top: 5px;
+  margin-right: 80px;
+  width: 80%;
+}
+
+.footer-links {
+  margin-top: 20px;
+  margin-right: 80px;
+  width: 80%;
+  display: flex;
+  gap: 40px;
+  margin-top: 80px;
+}
+
+.footer-links a {
+  text-decoration: none;
+  color: black;
+  font-size: 15px;
+}
+
+/* Responsive Design for max-width: 768px */
+@media (max-width: 768px) {
+  .login-container {
     flex-direction: column;
-    justify-content: start;
-    align-items: center;
-    background: white;
-    padding: 40px;
-    box-shadow: -5px 0px 10px rgba(0, 0, 0, 0.2);
+    height: auto;
   }
-  
-  /* .logo {
-    width: 150px;
-    margin-bottom: 10px;
-  } */
-  
+
+  .login-box {
+    width: 100%;
+    padding: 20px;
+    box-shadow: none;
+  }
+
   h2 {
-    font-size: 16px;
-    margin-bottom: 15px;
-    color: #333;
-  }
-  
-  .input-field {
+    margin-right: 0;
     width: 100%;
-    padding: 10px;
-    margin: 10px 0;
-    border: 1px solid #ccc;
-    border-radius: 5px;
+    text-align: center;
   }
-  
-  .sign-in-button {
-    width: 100%;
-    background-color: #e6007e;
-    color: white;
-    padding: 10px;
-    border: none;
-    border-radius: 2px;
-    cursor: pointer;
-    font-size: 14px;
+
+  .logo {
+    margin-right: 0;
   }
-  
-  .sign-in-button:hover {
-    background-color: #b80064;
-  }
-  
+
+  .footer-text,
   .footer-links {
-    margin-top: 15px;
+    margin-right: 0;
+    width: 100%;
+    text-align: center;
   }
-  
-  .footer-links a {
-    /* color: #6a1b9a; */
-    text-decoration: none;
-    margin: 0 5px;
-    font-size: 15px;
-    
+
+  .footer-links {
+    justify-content: center;
+    gap: 20px;
   }
-  
-  /* ✅ Responsive Design for max-width: 550px */
-  @media (max-width: 550px) {
-    .login-container {
-      flex-direction: column;
-      height: auto;
-    }
-  
-    .image-section {
-      width: 100%;
-      height: 40vh;
-      background-size: cover;
-    }
-  
-    .login-box {
-      width: 100%;
-      padding: 20px;
-      box-shadow: none;
-    }
-  
-    .input-field {
-      padding: 8px;
-    }
-  
-    .sign-in-button {
-      padding: 8px;
-      font-size: 13px;
-    }
-  
-    h2 {
-      font-size: 14px;
-    }
-  }
-  
+}
