@@ -116,6 +116,10 @@ h2 {
 
 /* Responsive Design for max-width: 768px */
 @media (max-width: 768px) {
+
+  .tu{
+    align-items: center;
+  }
   .login-container {
     flex-direction: column;
     height: auto;

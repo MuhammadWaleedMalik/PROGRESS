@@ -32,7 +32,7 @@ function Login({ onLogin }: LoginProps) {
       {/* Right Side: Login Form */}
       <div className="login-box">
         <div className="logo"></div>
-        <h2 className="mr-[120px] mt-10 ">Sign in with your Fontys account.</h2>
+        <h2 className="mr-[120px] mt-10 tu ">Sign in with your Fontys account.</h2>
         <form onSubmit={handleSubmit}>
           <input
             type="email"
