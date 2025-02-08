@@ -14,6 +14,7 @@ import ResultsOverview from "./pages/results/ResultsOverview";
 import Enrollment from "./pages/Enrollment/Enrollment";
 import Footer from "./components/Footer";
 import Login from "./pages/Login/Login";
+import ErrorBoundary from "./components/ErrorBoundary";
 
 function App() {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
@@ -28,6 +29,7 @@ function App() {
 
   return (
     <Provider store={store}>
+      <ErrorBoundary> 
       <div className="flex min-h-screen bg-white">
         {isLoggedIn && <Sidebar />}
         <div className="flex-1 flex flex-col min-h-screen">
@@ -58,6 +60,7 @@ function App() {
           {isLoggedIn && <Footer />}
         </div>
       </div>  
+      </ErrorBoundary>
       
     </Provider>
   );
