@@ -1,20 +1,20 @@
 import { useState } from "react";
 import { Provider } from "react-redux";
 import { Routes, Route, Navigate } from "react-router-dom";
-import { store } from "./store/store";
-import Sidebar from "./components/Sidebar";
-import Header from "./components/Header";
-import Breadcrumb from "./components/Breadcrumb";
-import Dashboard from "./pages/Dashboard";
-import General from "./pages/info/General";
-import AddressData from "./pages/info/AddressData";
-import Configurations from "./pages/info/Configurations";
-import ResultsList from "./pages/results/ResultsList";
-import ResultsOverview from "./pages/results/ResultsOverview";
-import Enrollment from "./pages/Enrollment/Enrollment";
-import Footer from "./components/Footer";
-import Login from "./pages/Login/Login";
-import ErrorBoundary from "./components/ErrorBoundary";
+import { store } from "./store/store.ts";
+import Sidebar from "./components/Sidebar.tsx";
+import Header from "./components/Header.tsx";
+import Breadcrumb from "./components/Breadcrumb.tsx";
+import Dashboard from "./pages/Dashboard.tsx";
+import General from "./pages/info/General.tsx";
+import AddressData from "./pages/info/AddressData.tsx";
+import Configurations from "./pages/info/Configurations.tsx";
+import ResultsList from "./pages/results/ResultsList.tsx";
+import ResultsOverview from "./pages/results/ResultsOverview.tsx";
+import Enrollment from "./pages/Enrollment/Enrollment.tsx";
+import Footer from "./components/Footer.tsx";
+import Login from "./pages/Login/Login.tsx";
+import ErrorBoundary from "./components/ErrorBoundary.tsx";
 
 function App() {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
