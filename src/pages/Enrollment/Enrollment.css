@@ -1,0 +1,92 @@
+
+#enroll-box {
+background-color: white;
+    width: 70%;
+    height: 70%;
+    border-radius: 3px;
+    border: 1px solid rgba(194, 193, 193, 0.527);
+}
+
+
+#enroll-box-above {
+    
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    height: 10%;
+    padding: 10px;
+}
+
+#enroll-box-above h2 { font-size: 18px;}
+
+
+
+#enroll-box-above button  { 
+    background-color: #00B0DD;
+    color: rgb(255, 255, 255);
+    width: 87px;
+    padding-left: 6px;
+    padding-top: 2px;
+    border-radius: 2px;
+    display: flex;
+    justify-content: space-around;
+}
+
+    
+#enroll-box-below {
+    
+    width: 100%;
+    height: 90%;
+    padding: 3px;
+    display: flex;
+}
+
+#below-left {
+
+    width: 60%;
+    height: 100%;
+}
+
+#below-left h2 { font-size: 18px; margin-left: 20px; margin-bottom: 10px;} 
+
+#below-left .rows { 
+    margin-left: 20px;
+    display: flex;
+    gap: 5px;
+    
+}
+#below-left .rows span{ color: #4cc6e8;}
+
+
+#below-right {
+
+    width: 40%;
+    height: 100%;
+}
+
+#below-right h2 {   font-size: 18px; margin-left: 20px; margin-bottom: 10px;}
+
+
+
+@media (max-width: 550px) {
+    #enroll-box {
+      width: 95%;
+    }
+    #enroll-box-above {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+    #enroll-box-above button {
+      width: 100%;
+    }
+    #enroll-box-below {
+      flex-direction: column;
+    }
+    #below-left, #below-right {
+      width: 100%;
+    }
+    .rows {
+      flex-wrap: wrap;
+    }
+  }
+  
