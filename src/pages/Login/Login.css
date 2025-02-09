@@ -34,15 +34,18 @@ body {
   }
 }
 
-.logo {
-  background-position: center;
-  background-size: cover;
-  background-image: url("https://adfs2.fontys.nl/adfs/portal/logo/logo.png?id=6FEF4AFF81051E59C87672BA544F79E108E68E557B781DCCF1B11D025768D6D4");
-  width: 200px;
-  height: 150px;
-  margin-right: 200px;
-  margin-bottom: -18px;
-}
+
+  .logo {
+    background-position: center;
+    background-size: contain; /* Change this to 'contain' to ensure the entire image fits */
+    background-image: url("https://adfs2.fontys.nl/adfs/portal/logo/logo.png?id=6FEF4AFF81051E59C87672BA544F79E108E68E557B781DCCF1B11D025768D6D4");
+    width: 200px;
+    height: 150px;
+    margin-right: 200px;
+    margin-bottom: -18px;
+    background-repeat: no-repeat; /* Ensure the image doesn't repeat */
+  }
+
 
 /* Right Side: Login Form */
 .login-box {
