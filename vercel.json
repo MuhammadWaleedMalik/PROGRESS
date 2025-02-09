@@ -1,15 +1,5 @@
 {
-  "version": 2,
   "cleanUrls": true,
-  "builds": [
-    {
-      "src": "package.json",
-      "use": "@vercel/static-build",
-      "config": {
-        "distDir": "build" // Replace with your build output directory
-      }
-    }
-  ],
   "rewrites": [
     {
       "source": "/(.*)",
@@ -54,7 +44,16 @@
       ]
     }
   ],
-  "alias": [
-    "https://www.fontysmyprogress.nl" 
+  "domains": [
+    {
+      "domain": "www.fontysmyprogress.nl",
+      "type": "www",
+      "autoAssign": true
+    },
+    {
+      "domain": "fontysmyprogress.nl",
+      "type": "@",
+      "autoAssign": true
+    }
   ]
 }
