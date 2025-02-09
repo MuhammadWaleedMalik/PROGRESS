@@ -6,16 +6,9 @@
       "destination": "/index.html"
     }
   ],
-  "redirects": [
-    {
-      "source": "/",
-      "destination": "/index.html",
-      "statusCode": 200
-    }
-  ],
   "headers": [
     {
-      "source": "/assets/(.*)",  
+      "source": "/assets/(.*)",
       "headers": [
         {
           "key": "Cache-Control",
@@ -24,7 +17,7 @@
       ]
     },
     {
-      "source": "/(.*).js",  
+      "source": "/(.*).js",
       "headers": [
         {
           "key": "Cache-Control",
@@ -33,7 +26,7 @@
       ]
     },
     {
-      "source": "/(.*).css",  
+      "source": "/(.*).css",
       "headers": [
         {
           "key": "Cache-Control",
@@ -42,7 +35,7 @@
       ]
     },
     {
-      "source": "/index.html", 
+      "source": "/index.html",
       "headers": [
         {
           "key": "Cache-Control",
