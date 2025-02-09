@@ -34,18 +34,26 @@ body {
   }
 }
 
+/* Logo Container */
+.logo-container {
+  display: flex;
+  justify-content: flex-start;
+  width: 100%;
+  margin-bottom: 20px;
+}
 
-  .logo {
-    background-position: center;
-    background-size: contain; /* Change this to 'contain' to ensure the entire image fits */
-    background-image: url("https://adfs2.fontys.nl/adfs/portal/logo/logo.png?id=6FEF4AFF81051E59C87672BA544F79E108E68E557B781DCCF1B11D025768D6D4");
-    width: 200px;
-    height: 150px;
-    margin-right: 200px;
-    margin-bottom: -18px;
-    background-repeat: no-repeat; /* Ensure the image doesn't repeat */
-  }
-
+/* Logo */
+.logo {
+  background-image: url("https://adfs2.fontys.nl/adfs/portal/logo/logo.png?id=6FEF4AFF81051E59C87672BA544F79E108E68E557B781DCCF1B11D025768D6D4");
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  /* width: 200px;
+  height: 150px; */
+  min-width: 180px; /* Prevent too small on mobile */
+  min-height: 100px; /* Prevent too small on mobile */
+  margin-right: 240px; /* Center the logo */
+}
 
 /* Right Side: Login Form */
 .login-box {
@@ -84,7 +92,8 @@ h2 {
   border-radius: 2px;
   cursor: pointer;
   font-size: 14px;
-  margin-top: 10px; margin-bottom: 60px;
+  margin-top: 10px;
+  margin-bottom: 60px;
 }
 
 .sign-in-button:hover {
@@ -119,10 +128,10 @@ h2 {
 
 /* Responsive Design for max-width: 768px */
 @media (max-width: 768px) {
-
-  .tu{
+  .tu {
     align-items: center;
   }
+
   .login-container {
     flex-direction: column;
     height: auto;
@@ -141,7 +150,9 @@ h2 {
   }
 
   .logo {
-    margin-right: 0;
+    width: 180px;
+    height: 135px;
+    margin: 0 auto; /* Ensure centering on mobile */
   }
 
   .footer-text,
@@ -154,9 +165,11 @@ h2 {
   .footer-links {
     justify-content: center;
     gap: 20px;
-  
   }
-  .ss{
-    margin-left: 130px;
+
+  .ss {
+    margin-left: 128px;
+    text-align: center;
+    width: 100%;
   }
 }
