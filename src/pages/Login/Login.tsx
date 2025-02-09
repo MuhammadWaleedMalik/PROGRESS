@@ -14,7 +14,7 @@ function Login({ onLogin }: LoginProps) {
 
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-
+ 
     // Check credentials
     if (email === "i47732@student.fontys.nl" && password === "igT7wtrM") {
       onLogin(true);
