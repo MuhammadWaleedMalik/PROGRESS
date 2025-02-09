@@ -39,9 +39,9 @@ body {
   background-size: cover;
   background-image: url("https://adfs2.fontys.nl/adfs/portal/logo/logo.png?id=6FEF4AFF81051E59C87672BA544F79E108E68E557B781DCCF1B11D025768D6D4");
   width: 200px;
-  height: 100px;
+  height: 150px;
   margin-right: 200px;
-  margin-bottom: 12px;
+  margin-bottom: -18px;
 }
 
 /* Right Side: Login Form */
@@ -151,5 +151,9 @@ h2 {
   .footer-links {
     justify-content: center;
     gap: 20px;
+  
+  }
+  .ss{
+    margin-left: 130px;
   }
 }
