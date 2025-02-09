@@ -12,6 +12,16 @@
       "destination": "/index.html",
       "statusCode": 200
     }
+  ],
+  "headers": [
+    {
+      "source": "/(.*)",
+      "headers": [
+        {
+          "key": "Content-Type",
+          "value": "text/html"
+        }
+      ]
+    }
   ]
-
 }
