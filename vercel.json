@@ -43,17 +43,5 @@
         }
       ]
     }
-  ],
-  "domains": [
-    {
-      "domain": "www.fontysmyprogress.nl",
-      "type": "www",
-      "autoAssign": true
-    },
-    {
-      "domain": "fontysmyprogress.nl",
-      "type": "@",
-      "autoAssign": true
-    }
   ]
 }
