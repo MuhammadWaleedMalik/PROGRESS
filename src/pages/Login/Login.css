@@ -45,7 +45,7 @@ body {
 
 /* Logo */
 .logo {
-  background-image: url("https://adfs2.fontys.nl/adfs/portal/logo/logo.png?id=6FEF4AFF81051E59C87672BA544F79E108E68E557B781DCCF1B11D025768D6D4");
+  background-image: url("/images/new.png");
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
