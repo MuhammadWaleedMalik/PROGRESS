@@ -2,7 +2,7 @@
   "rewrites": [
     {
       "source": "/(.*)",
-      "destination": "/index.html"
+      "destination": "/"
     }
   ],
   "cleanUrls": true,
@@ -13,5 +13,5 @@
       "statusCode": 200
     }
   ]
-  
+
 }
