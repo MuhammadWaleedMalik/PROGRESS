@@ -51,9 +51,9 @@ body {
   background-repeat: no-repeat;
   /* width: 200px;
   height: 150px; */
-  min-width: 180px; /* Prevent too small on mobile */
-  min-height: 100px; /* Prevent too small on mobile */
-  margin-right: 240px; /* Center the logo */
+  min-width: 200px; /* Prevent too small on mobile */
+  min-height: 120px; /* Prevent too small on mobile */
+  margin-right: 320px; /* Center the logo */
 }
 
 /* Right Side: Login Form */
