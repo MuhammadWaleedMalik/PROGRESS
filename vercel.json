@@ -6,24 +6,11 @@
       "destination": "/index.html"
     }
   ],
-  "headers": [
+  "redirects": [
     {
-      "source": "/(.*).js",
-      "headers": [
-        {
-          "key": "Content-Type",
-          "value": "application/javascript"
-        }
-      ]
-    },
-    {
-      "source": "/(.*)",
-      "headers": [
-        {
-          "key": "Cache-Control",
-          "value": "no-store, no-cache, must-revalidate, proxy-revalidate"
-        }
-      ]
+      "source": "/",
+      "destination": "/index.html",
+      "statusCode": 200
     }
   ]
 }
